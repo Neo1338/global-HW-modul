@@ -7,8 +7,21 @@
     <title>Домашка. Главное дз по Интерфейсам</title>
 </head>
 <body>
-    <div class="app">
-        <h1>Test</h1>
-    </div>
+  <div class="pincode">
+    <form action="" class="main-form">
+        <p><label for="password">Пин-код не был установлен в системе, пожалуйста создайте 6-ти значный пинкод:</label></p>
+        <input autofocus name="password" type="number" pattern="[0-9]" id="password"  value="" maxlength="6">
+        <div class="number">
+            <input type="number" maxlength="1" pattern="[0-9]">
+            <input type="number" maxlength="1" pattern="[0-9]">
+            <input type="number" maxlength="1" pattern="[0-9]">
+            <input type="number" maxlength="1" pattern="[0-9]">
+            <input type="number" maxlength="1" pattern="[0-9]">
+            <input type="number" maxlength="1" pattern="[0-9]">
+        </div>
+        <p class="error">Введен не допустимый символ! Допускаются только цифры</p>
+        <button type="submit" class="button-submit">Установить</button>
+    </form>
+</div>
 </body>
 </html>
